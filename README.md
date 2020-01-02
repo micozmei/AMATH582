@@ -1,4 +1,4 @@
 # AMATH582
 
-University of Washington
+University of Washington <br />
 Winter Quarter, 2020
