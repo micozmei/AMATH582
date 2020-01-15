@@ -1,4 +1,4 @@
-%Homework #1, Problem #1
+%Homework #1
 clear all; close all; clc;
 load Testdata 
 L=15; %Spatial domain from -15 to 15
