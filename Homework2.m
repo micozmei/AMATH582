@@ -400,7 +400,7 @@ xlabel('Time(s)'); ylabel('Frequency(\omega)');
 %title('Spectrogram Analysis of Signal with Convolution of Harr and Gaussian Filter (a=1 and b=128)'); 
 
 
-%% Problem 2 
+%% Problem 2
 % Audio 1 
 tr_piano = 16; %Record time (seconds) 
 y1 = audioread('music1.wav')'; 
