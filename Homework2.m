@@ -346,7 +346,7 @@ for i=1:length(b)
     subplot(3,1,2), plot(t, vcon1,'k')
     xlabel('Time(s)'); ylabel('S(t)*g(t)');
     
-    subplot(3,1,3), plot(ks, abs( fftshift(vcon1t))/max(abs( vcon1t)),'k')
+    subplot(3,1,3), plot(ks, abs(fftshift(vcon1t))/max(abs(vcon1t)),'k')
     xlabel('Frequency(\omega)'); ylabel('FFT(S(t)*g(t))'); 
     drawnow, pause(0.01) 
 end
@@ -377,9 +377,9 @@ for i=1:length(b)
     convolution2 = convolution2/max(convolution2); 
     vcon2 = convolution2.*vr; 
     vcon2t=fft(vcon2); 
-    vc2t_spect=[vc2t_spect; abs( fftshift(vcon2t))]; 
+    vc2t_spect=[vc2t_spect; abs(fftshift(vcon2t))]; 
     
-    subplot(3,1,1), plot(t, vr,'k',t, convolution2,'r')
+    subplot(3,1,1), plot(t, vr,'k',t,convolution2,'r')
     title('Signal of Interest with Convolution of Harr and Gaussian Filter (a=1 and b=128)')
     xlabel('Time(s)'); ylabel('S(t), g(t)'); 
     axis([0, 9, -1, 1])
@@ -387,7 +387,7 @@ for i=1:length(b)
     subplot(3,1,2), plot(t, vcon2,'k')
     xlabel('Time(s)'); ylabel('S(t)*g(t)'); 
     
-    subplot(3,1,3), plot(ks, abs( fftshift(vcon2t))/max(abs( vcon2t)),'k')
+    subplot(3,1,3), plot(ks, abs(fftshift(vcon2t))/max(abs(vcon2t)),'k')
     xlabel('Frequency(\omega)'); ylabel('FFT(S(t)*g(t))'); 
     drawnow, pause(0.01) 
 end
