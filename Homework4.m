@@ -7,7 +7,6 @@ clear all; close all; clc;
 %Question2_Part1
 %Question2_Part2 
 Question2_Part3 
-%Question2_Stats 
 
 %% Question 1 Part 1 
 function Question1_Part1 
